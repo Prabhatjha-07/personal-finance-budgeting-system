@@ -1,5 +1,6 @@
 import json
 
+from budget import add_budget
 from transaction import add_transaction, delete_transaction, view_transactions
 
 try:
@@ -25,7 +26,7 @@ def menu():
     print("1. Add Transaction")
     print("2. View Transactions")
     print("3. Delete Transaction")
-    print("4. View Budget")
+    print("4. Add Budget")
     print("5. Exit")
 
 
@@ -53,7 +54,10 @@ while True:
                 json.dump(data, file, indent=4)
 
         case "4":
-            print("View Budget")
+            add_budget(data)
+            
+            with open("data/finance.json" , "w") as file:
+                json.dump(data,file,indent=4)
 
         case "5":
             print("Exit")

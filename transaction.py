@@ -59,9 +59,7 @@ def delete_transaction(data):
                 data["transactions"].remove(transaction)
                 print("Transaction deleted successfully.")
 
-                for index, transaction in enumerate(
-                    data["transactions"], start=1
-                ):
+                for index, transaction in enumerate(data["transactions"], start=1):
                     transaction["id"] = index
 
                 return
@@ -69,8 +67,7 @@ def delete_transaction(data):
         if not found:
             print("Transaction not found.")
 
-        choice = input(
-            "Do you want to try again? (y/n): ").strip().lower()
+        choice = input("Do you want to try again? (y/n): ").strip().lower()
 
         if choice != "y":
             break
