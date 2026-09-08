@@ -50,7 +50,7 @@ htmlcov/
 # Personal Finance Data
 # =========================
 
-data/finance.json
+# data/finance.json
 
 # =========================
 # Temporary Files

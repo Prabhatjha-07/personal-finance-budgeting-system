@@ -1,0 +1,23 @@
+{
+    "transactions": [
+        {
+            "id": 1,
+            "type": "income",
+            "amount": 4500.0,
+            "category": "food",
+            "description": "foodd",
+            "date": "4545-4545-45"
+        },
+        {
+            "id": 2,
+            "type": "expense",
+            "amount": 343434.0,
+            "category": "adfg",
+            "description": "sdfg",
+            "date": "2026-45-45"
+        }
+    ],
+    "budgets": {
+        "food": 3400.0
+    }
+}
